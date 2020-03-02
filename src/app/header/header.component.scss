@@ -1,0 +1,30 @@
+header {
+    background-color: dodgerblue;
+    height: 60px;
+}
+.search-box {
+    position: relative;
+    width: 200px;
+    top: 13px;
+    border-bottom: 2px solid white !important;
+    height: 30px;
+}
+.search {
+    color: white;
+    position: absolute;
+    top: 7px;
+    right: 4px;
+}
+input {
+    border: 0;
+    width: 180px;
+    background: transparent;
+}
+input::placeholder {
+    color: white;
+}
+.cart {
+    color: white;
+    align-self: center;
+    padding: 20px;
+}
