@@ -1,7 +1,19 @@
 <div class="container">
-    <div class="row">
-      <div class="col-sm ht-250">
-        
+  <div class="sort"><i class="fa fa-sort bold pointer" (click)="sortProducts()">&nbsp;Sort</i></div>
+  <div class="row mt">
+    <div class="col-sm-3 mr" *ngFor="let product of products">
+      <div>
+        <img [src]="product.img_url" alt="{{product.name}}">
+      </div>
+      <div>{{product.name}}</div>
+      <div class="flex">
+        <div class="price">{{product.price}}</div>
+        <div class="tprice">{{product.totalPrice}}</div>
+        <div class="discount">{{product.discount}}% off</div>
+      </div>
+      <div>
+        <button class="btn" type="submit" (click)="addToCart(product)">Add to Cart</button>
       </div>
     </div>
   </div>
+</div>

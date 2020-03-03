@@ -1,3 +1,3 @@
-<app-header></app-header>
-<router-outlet></router-outlet>
+<app-header (emitItem)="fetchItem($event)" [product]="product"></app-header>
+<shopping-list [item]="item" (onCart)="addToCart($event)"></shopping-list>
 <app-footer></app-footer>

@@ -2,9 +2,9 @@
     <div></div>
     <div class="search-box">
         <i class="fa fa-search search"></i>
-        <input type="text" placeholder="Search">
+        <input type="text" placeholder="Search" [(ngModel)]="item" (input)="fetchItem($event)">
     </div>
     <div class="cart">
-        <i class="fa fa-cart-plus fa-2x"></i>
+        <i class="fa fa-cart-plus fa-2x"><sup class="badge">{{count}}</sup></i>
     </div>
 </header>
